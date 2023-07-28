@@ -89,4 +89,3 @@ class Rectangle:
     def __del__(self):
         """Prints the message Bye rectangle... when an instance is deleted."""
         print("Bye rectangle...")
-

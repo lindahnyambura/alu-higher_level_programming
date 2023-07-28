@@ -75,4 +75,3 @@ class Rectangle:
     def perimeter(self):
         """Public method that returns the rectangle perimeter."""
         return 2 * (self.__width + self.__height) if self.__width and self.__height else 0
-
