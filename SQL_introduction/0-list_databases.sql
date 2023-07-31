@@ -1,2 +1,2 @@
-#A script that lists all databeses
+*/A script that lists all databeses*/
 SHOW DATABASES;
