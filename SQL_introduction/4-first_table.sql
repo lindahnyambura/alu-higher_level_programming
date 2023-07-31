@@ -1,4 +1,4 @@
-script that creates a table firts_table
+--script that creates a table firts_table
 
 USE mysql;
 
