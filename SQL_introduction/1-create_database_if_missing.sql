@@ -1,2 +1,2 @@
-idk how to make a comment yet
-CREATE DATABASE hbtn_0c_0;
+-- create missing database
+CREATE DATABASE IF NOT EXISTS hbtn_0c_0;
