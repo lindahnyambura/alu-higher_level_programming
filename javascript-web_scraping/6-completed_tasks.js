@@ -19,7 +19,7 @@ request(url, (error, response, body) => {
     }
   }
 
-// sort keys in ascending order
+  // sort keys in ascending order
   const sortedTasks = Object.keys(completedTasks)
     .sort((a, b) => a - b)
     .reduce((acc, key) => {
