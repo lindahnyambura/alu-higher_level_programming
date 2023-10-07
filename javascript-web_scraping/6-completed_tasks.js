@@ -19,7 +19,17 @@ request(url, (error, response, body) => {
     }
   }
 
-  for (const userId in completedTasks) {
-    console.log(`${userId} : ${completedTasks[userId]}`);
+// sort keys in ascending order
+  const sortedTasks = Object.keys(completedTasks)
+    .sort((a, b) => a - b)
+    .reduce((acc, key) => {
+      acc[key] = completedTasks[key];
+      return acc;
+    }, {});
+
+  if (Object.keys(sortedTasks).length === 0) {
+    console.log(JSON.stringify({}));
+  } else {
+    console.log(sortedTasks);
   }
 });
